@@ -1,0 +1,85 @@
+@import '../about/about.component.scss';
+
+.service{
+    background-color: #2e90e5;
+}
+
+.cases-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.cases{
+    background-color: #2e90e5;
+}
+.card-image img {
+    width: 100%;
+}
+
+.card-body {
+    margin-top: 12px;
+    padding: 0px 15px 40px;
+    width: 100%;
+}
+
+.card-title h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-description p {
+    color: #14181a;
+    font-family: Rubik,sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: .9;
+}
+.card{
+    transition: all .3s linear;
+    height: 635px;
+
+}
+.card .card-image{
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 5px 60px #0000001a;
+    border-color: #d4d5d7;
+    background: #fff;
+}
+.card .card-image img {
+    transition: all .3s linear;
+    transform: scale(1);
+}
+
+
+.card .card-image img:hover {
+    transform: scale(1.02);
+}
+.btn-area {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-area button {
+    color: #fff;
+    background: #14181a;
+    text-transform: uppercase;
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    width: 200px;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 4px;
+    letter-spacing: .5px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-area button:hover {
+    background: #00a0db;
+}

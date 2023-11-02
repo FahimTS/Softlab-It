@@ -1,0 +1,31 @@
+<nav class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-logo">
+            <a routerLink=""><img src="../../assets/img/softlabit-white-210x39.png" alt=""></a>
+        </div>
+        <div class="menu-icon" [class.menu-icon-Class]="menuIconXbar" (click)="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar-menu"  [class.menuClass]="menuBars">
+            <div class="slide-top">
+                <h3>
+                    <i class="fas fa-align-left"></i> Menu
+                </h3>
+            </div>
+            <ul>
+                <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                <li><a routerLink="/cases" routerLinkActive="active">Cases</a></li>
+                <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+                <li><a routerLink="/technologies" routerLinkActive="active">Technologies</a></li>
+                <li><a routerLink="/offers" routerLinkActive="active">Offers</a></li>
+                <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+                <li><button>Get in touch</button></li>
+            </ul>
+            <div class="slide-bottom">
+                <p>All Rights Reserved by <a href="">Softlab IT</a></p>
+            </div>
+        </div>
+    </div>
+</nav>

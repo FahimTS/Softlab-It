@@ -1,0 +1,9 @@
+.brand-logo img {
+    max-width: 160px;
+    transition: all .3s linear;
+    transform: scale(1);
+}
+
+.brand-logo img:hover {
+    transform: scale(1.09);
+}

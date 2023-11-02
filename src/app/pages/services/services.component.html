@@ -1,0 +1,135 @@
+
+<!-- services section area -->
+<div class="service">
+    <div class="container">
+        <app-navber-menu></app-navber-menu>
+
+        <div class="banner-main-title">
+            <div class="banner-text">
+                <div class="banner-content-text">
+                    <h3 style="font-size: 60px; margin-bottom: 10px;">Our Services</h3>
+                    <p>A picture is worth a thousands words</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- cases study card section area -->
+<section class="cases-study">
+    <div class="container">
+        <div class="cases-inner">
+            <app-cased *ngFor="let data of services" [cases]="data"></app-cased>
+        </div>
+        <div class="btn-area">
+            <button>Load More</button>
+        </div>
+    </div>
+</section>
+
+<!-- shcedule section area -->
+
+<section class="schedule">
+    <div class="container">
+        <div class="schedule-area">
+            <app-shcedule></app-shcedule>
+        </div>
+        <div class="calender-main">
+            <div class="calender-area">
+                <div class="title-left">
+                    <h3>Book a call</h3>
+                </div>
+                <div class="title-right">
+                    <button>SEND A MESSAGE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <app-user-form></app-user-form>
+        </div>
+    </div>
+</section>
+
+<!-- footer area -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-menu">
+                <div class="footer-title">
+                    <h3>Menu</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-technology">
+                <div class="footer-title">
+                    <h3>Technology</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">AngularJS</a></li>
+                        <li><a href="#">NodeJS</a></li>
+                        <li><a href="#">NestJS</a></li>
+                        <li><a href="#">lonic</a></li>
+                        <li><a href="#">Mongo BD</a></li>
+                        <li><a href="#">Flutter</a></li>
+                        <li><a href="#">AWS Server</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-office">
+                <div class="footer-title">
+                    <h3>Office</h3>
+                </div>
+                <div class="office-details">
+                    <p>761/A, Road-11, Avenue-6, Mirpur DOHS, Dhaka 1216</p>
+                    <p>Mirpur, Dhaka, Bangladesh</p> <br>
+                    <p>56 west spruce st. Lakewood Nj</p>
+                    <p>Lakewood Nj, USA</p> <br>
+                    <p>Riyadh, King Fahad Road, 2nd floor</p>
+                    <p>Riyadh, Saudi Arab</p>
+                </div>
+            </div>
+            <div class="footer-say">
+                <div class="footer-title">
+                    <h3>Say hello</h3>
+                </div>
+                <div class="office-details">
+                    <a href="#">hmdfahim420@gmail.com</a>
+                    <a href="#">mdfahimhossen629@gmail.com</a>
+                    <div class="num">
+                        <a href="#">+8801645386422</a>
+                        <a href="#">+8801600000000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntt-area">
+            <div class="ntt">
+                <p>© 2022-2023 softlabit.com</p>
+            </div>
+            <div class="ntt-menu">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

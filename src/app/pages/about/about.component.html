@@ -1,0 +1,200 @@
+
+<!-- about me section area -->
+<div class="about-me">
+    <div class="container">
+        <app-navber-menu></app-navber-menu>
+
+        <div class="banner-main-title">
+            <div class="banner-text">
+                <div class="banner-content-text">
+                    <h3>About Softlab IT</h3>
+                    <p>Softlab IT is a leading global software development company that specializes in delivering innovative, cutting-edge IT solutions to businesses worldwide.</p>
+                    <button>Contact Us <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about posts section area -->
+
+<section class="about-posts">
+    <div class="container">
+        <div class="about-inner">
+            <div class="about-post">
+                <p>Welcome to SoftLab IT: Your Partner in Transforming Ideas into Digital Reality</p>
+                <p>At SoftLab IT, we are passionate about empowering businesses to thrive in the digital landscape. With our expertise in cutting-edge technologies and a client-centric approach, we help turn your vision into a reality. As a leading software development company, we specialize in delivering world-class solutions tailored to your unique needs.</p>
+                <h3>Who We Are:</h3>
+                <p>SoftLab IT is a dynamic team of talented professionals who are dedicated to providing exceptional software development services. With a wealth of industry experience and a relentless pursuit of excellence, we have built a strong reputation for delivering innovative and reliable solutions that drive business growth.</p>
+                <h3>Our Approach:</h3>
+                <p>At SoftLab IT, we believe in the power of collaboration. We work closely with our clients to understand their goals, challenges, and aspirations. Our team of experts combines creativity, technical expertise, and industry best practices to create solutions that not only meet your requirements but also exceed your expectations.</p>
+                <h3>What Sets Us Apart:</h3>
+                <p>Technological Expertise: We stay ahead of the curve by embracing the latest technologies and frameworks. Our team is proficient in MEAN stack, Angular, Node.js, MongoDB, and other cutting-edge tools, ensuring that we deliver robust, scalable, and future-proof solutions. Client-Centric Focus: Your success is our top priority. We take the time to listen, understand your unique needs, and tailor our solutions accordingly. Our agile development process ensures transparency, flexibility, and frequent communication, keeping you informed and involved throughout the project lifecycle. Exceptional Quality: We are committed to delivering nothing but the best. Our team of skilled developers, designers, and quality analysts follow stringent quality assurance processes to ensure that every solution we deliver is of the highest standard. Timely Delivery: We understand the importance of time in today's fast-paced business environment. Our streamlined development process, efficient project management, and dedicated teams enable us to deliver projects on time without compromising on quality. Long-Term Partnerships: We strive to build long-term relationships with our clients. Beyond project completion, we provide ongoing support, maintenance, and enhancements to ensure that your solution continues to evolve and adapt to your changing needs.</p>
+                <h3>Our Services:</h3>
+                <p>E-Commerce Development: We create world-class, performance-driven e-commerce websites using MEAN stack and other advanced technologies. Whether you need a single-vendor or multi-vendor solution, we can build a customized platform that enhances your online presence and boosts your sales. ERP Development: Our team specializes in developing custom ERP solutions for various industries, including construction, education, health, retail, and e-commerce. We streamline your business processes, improve operational efficiency, and provide you with comprehensive tools to manage your resources effectively. Corporate Website Development: With our team of design directors and UI/UX designers, we craft visually stunning and user-friendly corporate websites and portfolios. Our expertise in responsive design ensures that your website looks and performs flawlessly across all devices, leaving a lasting digital impression.</p>
+                <h3>Let's Transform Your Ideas into Reality:</h3>
+                <p>Partner with SoftLab IT and embark on a digital journey that drives innovation, growth, and success. Contact us today to discuss your project and let our dedicated team turn your ideas into reality. Keywords: software development company, world-class solutions, cutting-edge technologies, client-centric approach, technological expertise, client-centric focus, exceptional quality, timely delivery, long-term partnerships, e-commerce development, ERP development, corporate website development.</p>
+            </div>
+        </div>
+        <div class="count-inner">
+            <div class="count-box">
+                <h3>350+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="count-box">
+                <h3>50+</h3>
+                <p>Professional developers</p>
+            </div>
+            <div class="count-box">
+                <h3>07+</h3>
+                <p>years of experience</p>
+            </div>
+            <div class="count-box">
+                <h3>150+</h3>
+                <p>Esteemed clients</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- client review area section-->
+<section class="client-review">
+    <div class="container">
+        <div class="section-client-title">
+            <h3>Clients' reviews</h3>
+        </div>
+        <div class="client-inner">
+            <app-client-card *ngFor="let data of clientsCard" [clientCardData]="data"></app-client-card>
+
+        </div>
+        <div class="view-more-one">
+            <a href="#">VIEW MORE 5.0 REVIEWS ON CLUTCH <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    </div>
+</section>
+
+<!-- featured section area -->
+
+<section class="featured">
+    <div class="container">
+        <div class="featured-title">
+            <h3>Featured Projects:</h3>
+        </div>
+        <div class="featured--inner">
+            <app-our-project></app-our-project>
+        </div>
+
+        <div class="load-more">
+           <i class="fa solid fa spinner"></i> <a href="#" class="button">Load More</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- shcedule section area -->
+<section class="schedule">
+    <div class="container">
+        <div class="schedule-area">
+            <app-shcedule></app-shcedule>
+        </div>
+        <div class="calender-main">
+            <div class="calender-area">
+                <div class="title-left">
+                    <h3>Book a call</h3>
+                </div>
+                <div class="title-right">
+                    <button>SEND A MESSAGE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <app-user-form></app-user-form>
+        </div>
+    </div>
+</section>
+
+<!-- footer area -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-menu">
+                <div class="footer-title">
+                    <h3>Menu</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-technology">
+                <div class="footer-title">
+                    <h3>Technology</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">AngularJS</a></li>
+                        <li><a href="#">NodeJS</a></li>
+                        <li><a href="#">NestJS</a></li>
+                        <li><a href="#">lonic</a></li>
+                        <li><a href="#">Mongo BD</a></li>
+                        <li><a href="#">Flutter</a></li>
+                        <li><a href="#">AWS Server</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-office">
+                <div class="footer-title">
+                    <h3>Office</h3>
+                </div>
+                <div class="office-details">
+                    <p>761/A, Road-11, Avenue-6, Mirpur DOHS, Dhaka 1216</p>
+                    <p>Mirpur, Dhaka, Bangladesh</p> <br>
+                    <p>56 west spruce st. Lakewood Nj</p>
+                    <p>Lakewood Nj, USA</p> <br>
+                    <p>Riyadh, King Fahad Road, 2nd floor</p>
+                    <p>Riyadh, Saudi Arab</p>
+                </div>
+            </div>
+            <div class="footer-say">
+                <div class="footer-title">
+                    <h3>Say hello</h3>
+                </div>
+                <div class="office-details">
+                    <a href="#">hmdfahim420@gmail.com</a>
+                    <a href="#">mdfahimhossen629@gmail.com</a>
+                    <div class="num">
+                        <a href="#">+8801645386422</a>
+                        <a href="#">+8801600000000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntt-area">
+            <div class="ntt">
+                <p>© 2022-2023 softlabit.com</p>
+            </div>
+            <div class="ntt-menu">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

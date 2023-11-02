@@ -1,0 +1,76 @@
+.client-card {
+    width: 350px;
+    background: #fff;
+    border: 1px solid #d4d5d7;
+    box-shadow: 0 8px 16px #0000001a;
+    padding: 45px 33px 70px;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.client-card:hover {
+    transform: scale(1.03);
+}
+.client-img img {
+    width: 100%;
+}
+
+.client-card-top {
+    text-align: center;
+}
+
+.client-img {
+    width: 130px;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.client-name a {
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    color: #14181a;
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.client-name p {
+    font-family: Rubik,sans-serif;
+    color: #14181a;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.client-comment p {
+    color: #14181a;
+    font-size: 18px;
+    font-family: Rubik,sans-serif;
+    text-align: center;
+    line-height: 30px;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.client-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-start ul {
+    display: flex;
+}
+
+.rate-name span {
+    color: #17313b;
+    font-size: 22px;
+    letter-spacing: -1.3px;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+}
+.rating-start li {
+    color: #f83b2d;
+    margin-right: 2px;
+}

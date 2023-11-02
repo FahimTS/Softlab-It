@@ -1,0 +1,26 @@
+<div class="blog-inner">
+    <div class="blog-left">
+        <div class="blog-date">
+            <h4>{{blogCardData.blogDate}}</h4>
+        </div>
+        <div class="blog-title">
+            <h3>{{blogCardData.blogTitle}}</h3>
+        </div>
+        <div class="blog-creater">
+            <div class="blog-creater-image">
+                <img [src]="blogCardData.blogImg" alt="">
+            </div>
+            <div class="blog-creater-name">
+                <h3>{{blogCardData.blogNameOne}}</h3>
+                <h5>{{blogCardData.blogNameTwo}}</h5>
+            </div>
+        </div>
+        <div class="blog-btn">
+            <a [href]="">{{blogCardData.blogBtn}}</a> <i class="fa fa-arrow-right"></i>
+        </div>
+    </div>
+    <div class="blog-right">
+        <img [src]="blogCardData.blogImage" alt="">
+    </div>
+</div>
+

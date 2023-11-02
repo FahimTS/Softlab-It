@@ -1,0 +1,213 @@
+<!-- header area -->
+<header class="header">
+    <div class="container">
+        <app-navber-menu></app-navber-menu>
+        <div class="banner-main">
+            <div class="banner-title">
+                <h2>Softlab IT : A global Software development company</h2>
+            </div>
+            <div class="banner-desc">
+                <p>Softlab IT is a leading global software development company that specializes in delivering innovative, cutting-edge IT solutions to businesses worldwide.</p>
+            </div>
+            <div class="banner-btn-area">
+                <ul>
+                    <li><button>Contact Us</button></li>
+                    <li><a href="#">Book a 30-min Call with our Head of Business Development</a> <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- business grow area section-->
+<section class="business-grow">
+    <div class="container">
+        <div class="section-title">
+            <h3>How we can help your business grow</h3>
+            <p>Here are 4 key steps that Softlab IT takes to help your business grow:</p>
+        </div>
+        <div class="business-grow-inner">
+            <app-business-card *ngFor="let data of businessGrows" [businessGrowData]="data"></app-business-card>
+        </div>
+        <div class="section-shapes">
+            <img src="../../../assets/img/bg-grow.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- technology area section-->
+<section class="technologies">
+    <div class="container">
+        <div class="section-title">
+            <h3>Powerful technology we used in</h3>
+        </div>
+        <div class="tab-thum-area">
+            <ul>
+                <li><button>ECOMMERCE -</button></li>
+                <li><button>RESTAURANT -</button></li>
+                <li><button>ERP -</button></li>
+                <li><button>POS -</button></li>
+                <li><button>TICKETING -</button></li>
+                <li><button>BLOG -</button></li>
+                <li><button>MANAGEMENT SOLUTION -</button></li>
+                <li><button>MOBILE APP</button></li>
+            </ul>
+        </div>
+        <app-technology></app-technology>
+    </div>
+</section>
+
+<!-- customised area section-->
+<section class="customised">
+    <div class="container">
+        <div class="customised-inner">
+            <div class="customised-left">
+                <h3>Customised and powerful backend with easy control</h3>
+                <p>A customized and powerful backend web app is a crucial component of any web application. It is the backbone that supports the front-end user interface and handles all the complex functionality and processes that occur behind the scenes. <br>
+                    One of the primary benefits of a customized backend web app is the ability to tailor it to the specific needs of the project. This means that developers can build custom functionality and features that are not available in off-the-shelf solutions.</p>
+                <button>Case Study <i class="fa fa-angle-right"></i></button>
+            </div>
+            <div class="customised-right">
+                <img src="../../../assets/img/cnb-rob-1-1.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- client review area section-->
+<section class="client-review">
+    <div class="container">
+        <div class="section-client-title">
+            <h3>Clients' reviews</h3>
+        </div>
+        <div class="client-inner">
+            <app-client-card *ngFor="let data of clientsCard" [clientCardData]="data"></app-client-card>
+
+        </div>
+        <div class="view-more-one">
+            <a href="#">VIEW MORE 5.0 REVIEWS ON CLUTCH <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    </div>
+</section>
+
+<!-- recognition area section-->
+<section class="recongition">
+    <div class="container">
+        <div class="section-client-title">
+            <h3>Recognition</h3>
+        </div>
+        <div class="recognition-inner">
+            <div class="recognition-count">
+                <app-recognition-card *ngFor="let data of recognitions" [recognitionData]="data"></app-recognition-card>
+            </div>
+            <div class="award">
+                <app-award *ngFor="let data of awards" [awardData]="data"></app-award>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- schedule area section -->
+<section class="schedule">
+    <div class="container">
+        <div class="schedule-area">
+            <app-shcedule></app-shcedule>
+        </div>
+        <div class="calender-main">
+            <div class="calender-area">
+                <div class="title-left">
+                    <h3>Book a call</h3>
+                </div>
+                <div class="title-right">
+                    <button>SEND A MESSAGE <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <app-user-form></app-user-form>
+        </div>
+    </div>
+</section>
+
+<!-- footer area -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-menu">
+                <div class="footer-title">
+                    <h3>Menu</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-technology">
+                <div class="footer-title">
+                    <h3>Technology</h3>
+                </div>
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="#">AngularJS</a></li>
+                        <li><a href="#">NodeJS</a></li>
+                        <li><a href="#">NestJS</a></li>
+                        <li><a href="#">lonic</a></li>
+                        <li><a href="#">Mongo BD</a></li>
+                        <li><a href="#">Flutter</a></li>
+                        <li><a href="#">AWS Server</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-office">
+                <div class="footer-title">
+                    <h3>Office</h3>
+                </div>
+                <div class="office-details">
+                    <p>761/A, Road-11, Avenue-6, Mirpur DOHS, Dhaka 1216</p>
+                    <p>Mirpur, Dhaka, Bangladesh</p> <br>
+                    <p>56 west spruce st. Lakewood Nj</p>
+                    <p>Lakewood Nj, USA</p> <br>
+                    <p>Riyadh, King Fahad Road, 2nd floor</p>
+                    <p>Riyadh, Saudi Arab</p>
+                </div>
+            </div>
+            <div class="footer-say">
+                <div class="footer-title">
+                    <h3>Say hello</h3>
+                </div>
+                <div class="office-details">
+                    <a href="#">hmdfahim420@gmail.com</a>
+                    <a href="#">mdfahimhossen629@gmail.com</a>
+                    <div class="num">
+                        <a href="#">+8801645386422</a>
+                        <a href="#">+8801600000000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntt-area">
+            <div class="ntt">
+                <p>© 2022-2023 softlabit.com</p>
+            </div>
+            <div class="ntt-menu">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

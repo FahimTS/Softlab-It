@@ -1,0 +1,76 @@
+.section-card {
+    box-shadow: 0 5px 20px #0000001a;
+    border-color: #d4d5d7;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.section-card:hover{
+    box-shadow: 0 5px 60px #0000001a;
+    border-color: #d4d5d7;
+    background-color: #fff;
+}
+.section-grid {
+    visibility: visible;
+    animation-name: fadeInUp;
+    animation-delay: .2s;
+    animation-duration: 2s;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.section-card-img {
+    width: 100px;
+}
+
+.section-card-img img {
+    width: 100%;
+}
+
+.section-card-content h3 {
+    color: #14181a;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.section-card-content p {
+    font-size: 16px;
+    font-family: Rubik,sans-serif;
+    color: #14181a;
+    opacity: .9;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.card-more {
+    margin-bottom: 30px;
+}
+.card-more a{
+    color: #00a0db;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    transform: translate(-15px);
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transition: all 0.2s ease;
+}
+.section-card:hover .card-more a {
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+    text-decoration: none;
+}
+.section-card:hover .card-more:hover a{
+    text-decoration: underline;
+}

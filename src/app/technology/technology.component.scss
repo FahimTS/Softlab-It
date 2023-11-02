@@ -1,0 +1,72 @@
+.tab-description-left {
+    animation-name: fadeInLeft;
+    visibility: visible;
+    transition: .3s;
+}
+@keyframes fadeInLeft{
+    0%{
+        transform: translate3d(-100%,0,0);
+        visibility: visible;
+    }
+    100%{
+        transform: translateZ(0);
+    }
+}
+.tab-description-left h3 {
+    color: #14181a;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.tab-description-left p {
+    font-size: 18px;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.tab-description-left a {
+    color: #00a0db;
+    font-family: Rubik,sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tab-description-right h3{
+    color: #14181a;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.tech-brand-logo {
+    max-width: 120px;
+}
+
+.tech-brand-logo img {
+    max-width: 100%;
+    width: auto;
+    cursor: pointer;
+}
+
+.technology-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.tech-brand-logo-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 15px;
+}
+@media only screen and (max-width: 900px){
+
+}

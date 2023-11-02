@@ -1,0 +1,30 @@
+<div class="client-card">
+    <div class="client-card-top">
+        <div class="client-img">
+            <img [src]="clientCardData.image" alt="">
+        </div>
+        <div class="client-name">
+            <a [href]="">{{clientCardData.hrefName}}</a>
+            <p>{{clientCardData.ceoName}}</p>
+        </div>
+    </div>
+    <div class="client-card-bottom">
+        <div class="client-comment">
+            <p>{{clientCardData.description}}</p>
+        </div>
+        <div class="client-rating">
+            <div class="rate-name">
+                <span>{{clientCardData.rateNum}}</span>
+            </div>
+            <div class="rating-start">
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

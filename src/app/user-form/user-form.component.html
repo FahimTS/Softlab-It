@@ -1,0 +1,43 @@
+<div class="message">
+    <div class="message-us">
+        <h3>Write to Us</h3>
+    </div>
+    <form #dataForm='ngForm' (ngSubmit)="onSubmitForm(dataForm)">
+
+        <div class="form-input">
+            <mat-form-field appearance="fill">
+                <label>Full Name *</label>
+                <input ngModel name="Full Name" matInput placeholder="Enter Your Full Name..." required>
+                <mat-error>Please enter your full name.</mat-error>
+              </mat-form-field>
+        </div>
+
+        <div class="grid">
+            <div class="form-input">
+                <mat-form-field appearance="fill">
+                    <label>Email *</label>
+                    <input ngModel name="Email" matInput placeholder="Enter Your Email..." required>
+                    <mat-error>Please enter your email.</mat-error>
+                  </mat-form-field>
+            </div>
+            <div class="form-input">
+                <mat-form-field appearance="fill">
+                    <label>Phone Number *</label>
+                    <input ngModel name="Phone Number" matInput placeholder="Enter Your Phone..." required>
+                    <mat-error>Please enter your phone number.</mat-error>
+                  </mat-form-field>
+            </div>
+        </div>
+
+        <div class="form-textarea">
+            <mat-form-field appearance="fill">
+                <label>Message</label>
+                <textarea ngModel name="Message" matInput cols="30" rows="3" placeholder="Type something..." class="bg-trans" required=""></textarea>
+                <mat-error>Please enter your message.</mat-error>
+              </mat-form-field>
+        </div>
+        <div class="form-btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>

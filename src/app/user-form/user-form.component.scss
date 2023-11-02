@@ -1,0 +1,79 @@
+.message {
+    display: block;
+    background: #fff;
+    box-shadow: 0 4px 6px #0000001a;
+    padding: 50px;
+}
+
+form {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    mat-form-field{
+        width: 100%;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px 20px;
+    }
+
+}
+
+.bg-trans{
+    background-color: transparent;
+}
+
+.message form .form-input label {
+    font-size: 15px;
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    opacity: .8;
+    display: block;
+    margin-bottom: 10px;
+}
+.message form .form-textarea label{
+    font-size: 15px;
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    opacity: .8;
+    display: block;
+    margin-bottom: 10px;
+}
+.message-us {
+    display: block;
+    margin-bottom: 40px;
+    h3 {
+        color: #14181a;
+        font-family: Rubik,sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
+.form-btn button {
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #00a0db;
+    transition: all .3s ease-in-out;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.form-btn button:hover {
+    background: #14181a !important;
+}
+.form-input {
+    margin-bottom: 20px;
+}

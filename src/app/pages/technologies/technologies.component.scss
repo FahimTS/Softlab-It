@@ -1,0 +1,57 @@
+@import '../about/about.component.scss';
+
+.banner-content-text h3 {
+    font-size: 60px !important;
+    margin-bottom: 10px !important;
+}
+.card-title h3 {
+    font-size: 25px;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+.technology-card{
+    transition: all 0.3s linear;
+}
+.technology-card:hover{
+    box-shadow: 0 5px 60px rgba(0, 0, 0, 0.1019607843);
+    border-color: #d4d5d7;
+    background: #fff;
+}
+
+.card-description p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #14181a;
+    font-family: Rubik,sans-serif;
+    opacity: .9;
+}
+
+.technology-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+}
+.technology-card .card-img:hover img{
+    transform: scale(1.02);
+}
+
+.technology-card {
+    overflow: hidden;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.technology-card .card-img img {
+    transition: 0.3s;
+}

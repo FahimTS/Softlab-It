@@ -1,0 +1,513 @@
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+.header{
+    background-image: url(../../../assets/img/sooftlab-landing-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 1px;
+}
+
+
+.banner-main {
+    width: 1000px;
+    margin: 110px auto;
+}
+
+.banner-title h2 {
+    font-family: K2D,sans-serif;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+
+}
+.banner-title{
+    animation: downup 1s ease;
+}
+@keyframes downup{
+    0%{
+        transform: translateY(200px);
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.business-grow-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.banner-desc {
+    width: 560px;
+    animation: downup 1.5s ease;
+}
+
+.banner-desc p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: Rubik,sans-serif;
+    margin-bottom:45px;
+
+}
+.banner-btn-area ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.banner-btn-area{
+    animation: downup 2s ease;
+}
+.banner-btn-area ul li button {
+    width: 190px;
+    padding: 18px;
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    font-size: 18px;
+    background: #fff;
+    transition: 0.4s;
+
+}
+.banner-btn-area button:hover {
+    background: #14181a !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.banner-btn-area a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 13px;
+    font-family: Inter,sans-serif;
+}
+
+.banner-btn-area i {
+    color: #fff;
+}
+.business-grow{
+    background-color: #dddddd1c;
+    position: relative;
+}
+.section-shapes img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -11;
+    bottom: -7px;
+}
+
+// technologies area style
+
+section.technologies {
+    padding: 170px 0px;
+}
+.tab-thum-area ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.tab-thum-area ul li button {
+    font-size: 50px;
+    color: #00a0db;
+    outline: none;
+    border: none;
+    background: none;
+    line-height: 67px;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.tab-thum-area {
+    padding-top: 15px;
+    padding-bottom: 80px;
+}
+// customised area style
+.customised{
+    width: 100%;
+    height: 700px;
+    display: block;
+    position: relative;
+}
+.customised-inner {
+    display: flex;
+    align-items: center;
+}
+
+
+.customised::after{
+    content: "";
+    background-image: url(../../../assets/img/blue-shape1.e8bfb60e9a832029.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.customised .customised-left{
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    padding-top: 75px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 12;
+
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translate3d(-100%,0,0);
+        visibility: visible;
+    }
+    100%{
+        transform: translateZ(0);
+    }
+}
+.customised .customised-inner{
+    position: relative;
+}
+.customised-left h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 550px;
+    width: 100%;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.customised-left p {
+    max-width: 600px;
+    width: 100%;
+    font-size: 18px;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    opacity: .8;
+    line-height: 32px;
+}
+.customised-left button {
+    font-family: Rubik,sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0px 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #14181a;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.customised-left button:hover {
+    background: #fff;
+    color: black;
+}
+.customised-right {
+    margin-top: 118px;
+    // box-shadow: 0px 10px 70px 15px #ddd;
+}
+// client area style
+.section-client-title h3 {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #14181a;
+    margin-bottom: 60px;
+}
+.client-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+.view-more-one {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.view-more-one a {
+    color: #00a0db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 15px;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.view-more-one a span {
+    font-size: 17px;
+    transition: all .3s linear;
+    position: relative;
+    right: 0;
+}
+.view-more-one a:hover span{
+    right: -5px;
+}
+.recognition-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.award {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: auto;
+    grid-gap: 25px;
+}
+// schedule area style
+section.schedule {
+    background: rgba(221, 221, 221, 0.1098039216);
+}
+.calender-main {
+    margin:auto;
+    max-width: 900px;
+    width: 100%;
+}
+.title-left h3 {
+    font-size: 35px;
+    color: #14181a;
+    font-weight: 600;
+}
+.calender-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.title-right button {
+    color: #00a0db;
+    background: transparent;
+    font-size: 18px;
+    font-family: Rubik,sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer.footer {
+    background: #002a49;
+    padding: 40px 15px 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 150px;
+}
+
+.footer-title h3 {
+    color: #fff;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.footer-title {
+    margin-bottom: 25px;
+}
+.footer-link ul li {
+    margin-bottom: 12px;
+}
+
+.footer-link ul li a {
+    display: block;
+    color: #fff;
+    font-family: Rubik,sans-serif;
+    font-size: 16px;
+    transition: all .3s linear;
+    font-weight: 400;
+    opacity: .9;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.office-details p {
+    color: #fff;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    width: 270px;
+}
+
+.footer-say a {
+    color: #00a0db;
+    display: block;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.footer-say {
+    display: block;
+}
+
+.num a {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer.footer::after {
+    content: "";
+    background-image: url(../../../assets/img/footer-removebg-preview.png);
+    width: 100%;
+    position: absolute;
+    top: -140px;
+    height: 150px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 180%;
+}
+.ntt-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.ntt p {
+    color: #fff;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.ntt-menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+
+.ntt-menu ul li a {
+    color: #fff;
+    opacity: .9;
+    font-family: Rubik,sans-serif;
+    font-size: 14px;
+    transition: all .3s linear;
+    font-weight: 400;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 28px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    font-family: Rubik,sans-serif;
+    font-weight: 500;
+    transition: all .3s linear;
+    font-size: 16px;
+}
+.footer-link ul li a:hover {
+    text-decoration: underline;
+}
+.social-media ul li a :hover {
+    color: #00a0db;
+}
+
+@media only screen and (max-width: 900px){
+    .banner-main {
+        margin-left: 20px !important;
+    }
+    
+    .banner-title {
+        width: 655px;
+    }
+    
+    .banner-title h2 {
+        font-size: 50px !important;
+    }
+    
+    .banner-main {
+        margin-top: 100px !important;
+    }
+    
+    .banner-btn-area ul {
+        display: block !important;
+    }
+    
+    .banner-btn-area ul li {
+        margin-bottom: 20px;
+    }
+    .section-title h3 {
+        width: 560px;
+    }
+    
+    .section-title {
+        margin-left: 20px;
+    }
+    
+    .section-card {
+        width: 400px;
+        height: 445px;
+    }
+    
+    .section-grid {display: flex;align-items: center;justify-content: center;}
+    .tab-thum-area ul li button {font-size: 25px !important;display: flex;}
+
+    .tab-thum-area {
+    margin-left: 20px;
+    }
+    .customised-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .customised-right {
+        display: none;
+    }
+    .client-inner {
+        grid-template-columns: repeat(2, 1fr) !important;
+        display: grid;
+        gap: 25px 0px !important;
+        margin: auto;
+        width: 100%;
+        margin: auto !important;
+    }
+    
+    .section-client-title {
+        margin-left: 20px;
+    }
+    
+    .recognition-count {
+        display: grid !important;
+        justify-content: center !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
